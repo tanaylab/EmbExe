@@ -72,5 +72,6 @@ For reproducing the analysis of the wildtype ExE and embryonic manifold you shou
 13. exutero_doublet_removal
 14. exutero_f_find_bad_genes
 15. exutero_f_generate_metacell
+16. mc2d_projection_exutero_f
 
 
