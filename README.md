@@ -39,25 +39,32 @@ The initialization script (`scripts/init.R`) loads automatically the necessary R
 Plots shown in the paper can be reproduced by running the notebooks.
 
 
+
+### Analysis of wildtype ExE and embryonic manifold
 For reproducing the analysis of the wildtype ExE and embryonic manifold you should run the following notebooks in that order.
 
-1. import_mars
-2. embexe_find_bad_genes
-3. embexe metacell construction
-4. embryo_temporal_ordering
-5. embexe_interpolate_time
-6. split_embexe_into_emb_and_exe
-7. emb.estimation_of_proliferation_rates
-8. emb_generate_network
-9. generate-figures
+1.  import_mars
+2.  embexe_find_bad_genes
+3.  embexe metacell construction
+4.  embryo_temporal_ordering
+5.  embexe_interpolate_time
+6.  mc2d_projection_embexe
+7.  split_embexe_into_emb_and_exe
+8.  emb.estimation_of_proliferation_rates
+9.  emb_generate_network
+10. mc2d_projection_emb
+11. mc2d_projection_exe
 
-Change permissions for the analysis files:
+### Analysis of EXE-specific Elf5 KO embryos 
 
-```bash
-chmod a+wx data/
-chmod a+rw -R data/
-chmod a+rx -R db/
-chmod a+rx scrna_db/
-chmod a+rw -R scrna_db/
-chmod a+w figs/
-```
+10. import_elf5
+11. elf5_processing_summary
+
+### Analysis of *ex utero* cultured embryos
+
+12. import_10x_exutero
+13. exutero_doublet_removal
+14. exutero_f_find_bad_genes
+15. exutero_f_generate_metacell
+
+
