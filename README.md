@@ -18,21 +18,27 @@ This will download all the necessary data including processed metacell objects n
 
 The initialization script (`scripts/init.R`) loads automatically the necessary R packages to run the notebooks. The analysis was done using R 4.0.5 and the following packages:
 
-- gridExtra 2.3
-- qvalue 2.22.0
-- ggrepel 0.9.1
-- ggpubr 0.4.0   
-- ggplot2 3.3.5
-- zoo 1.8-9
-- qlcMatrix 0.9.7
-- sparsesvd 0.2  
-- slam 0.1-49
-- tidyr 1.2.0
-- dplyr 1.0.9
-- tgutil 0.1.13  
-- tgstat 2.3.17
-- metacell 0.3.7
-- Matrix 1.3-4
+- devtools_2.4.2
+- usethis_2.0.1
+- here_1.0.1         
+- slanter_0.2-0
+- DoubletFinder_2.0.3 
+- SeuratObject_4.0.2 
+- Seurat_4.0.3
+- forcats_0.5.1
+- stringr_1.4.0      
+- dplyr_1.0.9
+- purrr_0.3.4
+- readr_2.1.0        
+- tidyr_1.2.0
+- tibble_3.1.3
+- ggplot2_3.3.5      
+- tidyverse_1.3.1
+- umap_0.2.7.0
+- tgutil_0.1.13      
+- tgstat_2.3.17
+- metacell_0.3.7
+- Matrix_1.3-4 
 
 ## Notebook order 
 
