@@ -36,7 +36,7 @@ The initialization script (`scripts/init.R`) loads automatically the necessary R
 
 ## Notebook order 
 
-Plots shown in the paper can be reproduced by running the notebooks.
+Plots shown in the paper can be reproduced by running the following notebooks.
 
 
 
