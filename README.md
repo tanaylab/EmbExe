@@ -49,8 +49,7 @@ The initialization script (`scripts/init.R`) loads automatically the necessary R
 
 ## Notebook order 
 
-Plots shown in the paper can be reproduced by running the following notebooks.
-
+For every Figure there is a corresponding notebook that generates the plots shown in the figure. By running the notebooks below in the specified order, one can reproduce the whole analysis of the paper starting from the scRNA-seq UMI matrices.
 
 
 ### Analysis of wildtype ExE and embryonic manifold
@@ -80,5 +79,7 @@ For reproducing the analysis of the wildtype ExE and embryonic manifold you shou
 14. exutero_f_find_bad_genes
 15. exutero_f_generate_metacell
 16. mc2d_projection_exutero_f
+17. wt_atlas_projection_of_exutero_embryos
+18. atlas_self_projection_of_wt_cells
 
 
