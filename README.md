@@ -39,6 +39,13 @@ The initialization script (`scripts/init.R`) loads automatically the necessary R
 - tgstat_2.3.17
 - metacell_0.3.7
 - Matrix_1.3-4 
+- data.table_1.14.2
+- qvalue_2.22.0
+- princurve_2.1.6
+- RColorBrewer_1.1-2
+- tglkmeans_0.3.4
+- zoo_1.8-9
+- ggrepel_0.9.1
 
 ## Notebook order 
 
