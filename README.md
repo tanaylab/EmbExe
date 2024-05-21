@@ -3,6 +3,18 @@
 
 This repository is the accompanying code for our paper on the development of extraembryonic ectoderm and embryonic tissues during mouse gastrulation. There is an [MCView shiny app](https://tanaylab.weizmann.ac.il/EmbExe) where you can interrogate the data. The code is splitted into jupyter notebooks that can be found in the notebook folder.
 
+### Quick links
+
+- Interactive [extraembryonic ectoderm](https://tanaylab.weizmann.ac.il/EmbExe/ExE_ectoderm/) and [embryonic](https://tanaylab.weizmann.ac.il/EmbExe/embryonic_manifold/) atlases
+
+- Metacells paper: Ben-Kiki et al. 2022 [Genome Biology](https://doi.org/10.1186/s13059-022-02667-1)
+
+- [Metacells python package](https://github.com/tanaylab/metacells)
+
+- [MCView] (https://github.com/tanaylab/MCView)
+
+- Raw FASTQ files are available under GEO accessions [GSE267870](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE267870)
+
 ## Running the notebooks
 
 Prior to any analysis, after cloning the repository, please download first the necessary data by running (in the root directory of the cloned repository):
@@ -88,4 +100,7 @@ For reproducing the analysis of the wildtype ExE and embryonic manifold you shou
 17. wt_atlas_projection_of_exutero_embryos - atlas projection of ex utero data on WT atlas
 18. atlas_self_projection_of_wt_cells
 
+Contact
+
+For help, please contact hernan.rubinstein@weizmann.ac.il or markus.mittnenzweig@mdc-berlin.de .
 
