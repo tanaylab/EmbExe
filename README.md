@@ -1,4 +1,4 @@
-# Synchronization of Placenta and Embryonic Development Underlies Mouse Gastrulation
+# Temporal effects of BMP4 on mouse embryonic and extraembryonic development
 
 
 This repository is the accompanying code for our paper on the development of extraembryonic ectoderm and embryonic tissues during mouse gastrulation. There is an [MCView shiny app](https://tanaylab.weizmann.ac.il/EmbExe) where you can interrogate the data. The code is splitted into jupyter notebooks that can be found in the notebook folder.
@@ -49,10 +49,9 @@ The initialization script (`scripts/init.R`) loads automatically the necessary R
 
 ## Notebook order 
 
-For every Figure there is a corresponding notebook that generates the plots shown in the figure. By running the notebooks below in the specified order, one can reproduce the whole analysis of the paper starting from the scRNA-seq UMI matrices.
+For every figure there is a corresponding notebook that generates the plots shown in the figure. In addition, the notebooks and scripts below were run prior to the final data analysis steps. It is not necessary to run those for reproducing specific figures. If you want to rerun analysis steps prior to the figure generation, you should follow the order of the notebooks below.
 
-
-### Analysis of wildtype ExE and embryonic manifold
+### Analysis of wildtype extra-embryonic ectoderm and embryonic manifolds
 For reproducing the analysis of the wildtype ExE and embryonic manifold you should run the following notebooks in that order.
 
 1.  import_mars
@@ -67,6 +66,13 @@ For reproducing the analysis of the wildtype ExE and embryonic manifold you shou
 10. mc2d_projection_emb
 11. mc2d_projection_exe
 
+### Analysis of Bmp4 KO embryos 
+
+1.  import_embexe_bmp4_og2_plates.ipynb - notebook for importing MARS-seq plates from WT, OG2 and Bmp4 experiments
+2. metacell2_embexe_bmp4_og2.ipynb - notebook for creating a joint metacell object
+3. embexe_bmp4_generate_cgraph_and_cell_type_time_annotation.ipynb - notebook for transferring cell type annotation from wildtype atlas to Bmp4 KO cells
+4. Find_lateral_genes_Bmp4_vs_WT.ipynb - differential expression analysis per cell type between KO, control and WT cells. Used to find and filter genes that are also differentially expressed in control embryos
+
 ### Analysis of EXE-specific Elf5 KO embryos 
 
 10. import_elf5
@@ -74,12 +80,12 @@ For reproducing the analysis of the wildtype ExE and embryonic manifold you shou
 
 ### Analysis of *ex utero* cultured embryos
 
-12. import_10x_exutero
-13. exutero_doublet_removal
-14. exutero_f_find_bad_genes
-15. exutero_f_generate_metacell
-16. mc2d_projection_exutero_f
-17. wt_atlas_projection_of_exutero_embryos
+12. import_10x_exutero - initial import of scRNA-seq data from ex utero cultured embryos
+13. exutero_doublet_removal - doublet removal using DoubletFinder
+14. exutero_f_find_bad_genes - remove genes from selected genes for metacell construction that are associated with 
+15. exutero_f_generate_metacell - generate metacell1 object
+16. mc2d_projection_exutero_f - 2d projection of metacell1 object
+17. wt_atlas_projection_of_exutero_embryos - atlas projection of ex utero data on WT atlas
 18. atlas_self_projection_of_wt_cells
 
 
